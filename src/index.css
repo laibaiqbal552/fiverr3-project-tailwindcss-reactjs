@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.heading {
+}
+
+.test2 {
+  writing-mode: vertical-rl;
+}
+
+table {
+  @apply relative max-w-[1200px] mx-auto my-0 overflow-x-scroll;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+table tr {
+  @apply w-1/2;
+}
+table td {
+  border: 2px solid black;
+}
+.container-timeline2::before {
+  @apply content-[""] absolute w-[14px] h-[14px] -left-2 bg-black border-[3px] border-black -bottom-2 rounded-[50%] z-[1];
+}
+.container-timeline2::after {
+  @apply content-[""] absolute w-[14px] h-[14px] -right-2 bg-black border-[3px] border-black -bottom-2 rounded-[50%] z-[1];
+}
+.container-timeline3::before {
+  @apply content-[""] absolute w-[14px] h-[14px] -left-2 bg-black border-[3px] border-black -top-2 rounded-[50%] z-[1];
+}
+
+.container-timeline3::after {
+  @apply content-[""] absolute w-[14px] h-[14px] -right-2 bg-black border-[3px] border-black -bottom-2 rounded-[50%] z-[1];
+}
+.container-timeline4::before {
+  @apply content-[""] absolute w-[14px] h-[14px] -left-2 bg-black border-[3px] border-black -bottom-2 rounded-[50%] z-[1];
+}
